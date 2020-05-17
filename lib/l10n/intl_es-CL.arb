@@ -1,0 +1,7 @@
+{
+  "@@locale": "es-CL",
+  "youHavePushedTheButtonThisManyTimes": "Presionaste el botón tantas veces:",
+  "@youHavePushedTheButtonThisManyTimes": {
+    "type": "text"
+  }
+}

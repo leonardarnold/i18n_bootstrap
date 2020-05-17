@@ -1,0 +1,7 @@
+{
+  "@@locale": "en",
+  "youHavePushedTheButtonThisManyTimes": "You have pushed the button this many times:",
+  "@youHavePushedTheButtonThisManyTimes": {
+    "type": "text"
+  }
+}

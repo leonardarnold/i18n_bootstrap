@@ -1,0 +1,22 @@
+{
+  "app": {
+    "access_token": "xxxxxxxx", 
+    "base_language": "en", 
+    "pull": {
+      "target": [
+        {
+          "file_format": "arb", 
+          "path": "lib/l10n/intl_<language>.arb"
+        }
+      ]
+    }, 
+    "push": {
+      "source": [
+        {
+          "file_format": "arb", 
+          "path": "lib/l10n/intl_<language>.arb"
+        }
+      ]
+    }
+  }
+}

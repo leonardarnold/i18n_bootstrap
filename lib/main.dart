@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_localizations/flutter_localizations.dart';
+import 'package:i18nbootstrap/generated/l10n.dart';
 
 void main() {
   runApp(MyApp());
@@ -26,6 +28,14 @@ class MyApp extends StatelessWidget {
         // closer together (more dense) than on mobile platforms.
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
+      localizationsDelegates: [
+        S.delegate,
+        GlobalMaterialLocalizations.delegate,
+        GlobalWidgetsLocalizations.delegate,
+        GlobalCupertinoLocalizations.delegate,
+      ],
+      locale: Locale("es", "CL"),
+      supportedLocales: S.delegate.supportedLocales,
       home: MyHomePage(title: 'Flutter Demo Home Page'),
     );
   }
@@ -98,7 +108,7 @@ class _MyHomePageState extends State<MyHomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: <Widget>[
             Text(
-              'You have pushed the button this many times:',
+              S.of(context).youHavePushedTheButtonThisManyTimes,
             ),
             Text(
               '$_counter',
